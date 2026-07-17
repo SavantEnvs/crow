@@ -1,0 +1,9 @@
+project: savantenvs/crow
+target: json_fuzzer
+cmds:
+  - cmd: /mayhem/json_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/json_fuzzer.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/json_fuzzer/testsuite

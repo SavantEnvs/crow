@@ -1,0 +1,1 @@
+{{name}} has {{count}} items. {{#list}}{{.}} {{/list}}{{^empty}}none{{/empty}}

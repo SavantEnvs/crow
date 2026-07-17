@@ -1,0 +1,8 @@
+project: savantenvs/crow
+target: b64_fuzzer
+cmds:
+  - cmd: /mayhem/b64_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/b64_fuzzer/testsuite

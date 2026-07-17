@@ -1,0 +1,9 @@
+project: savantenvs/crow
+target: template_fuzzer
+cmds:
+  - cmd: /mayhem/template_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/template_fuzzer.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/template_fuzzer/testsuite
